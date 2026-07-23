@@ -1,142 +1,21 @@
-# Peterson Solution Simulator
+# Mutex Lock Simulator
 
-A web-based simulator of Peterson's Solution for Process Synchronization using React.js, Node.js, and Express.js.
+A simple full-stack web application that simulates **Mutex Lock** synchronization used in Operating Systems for process synchronization and mutual exclusion.
 
-## Features
+## 📌 Overview
 
-- Peterson's Solution Simulation
-- Process 0 Execution
-- Process 1 Execution
-- Flag Status Display
-- Turn Variable Display
-- Mutual Exclusion Demonstration
-- REST API Integration
-- Responsive User Interface
+This project demonstrates how a **Mutex (Mutual Exclusion) Lock** works between two processes (Process 0 and Process 1) trying to access a shared critical section. Only one process can hold the lock at a time — the other must wait until the lock is released.
 
-## Technologies Used
+## 🛠️ Tech Stack
 
-### Frontend
-- React.js
-- Axios
-- HTML5
-- CSS3
-
-### Backend
+**Backend:**
 - Node.js
 - Express.js
 - CORS
-- dotenv
+- Dotenv
 
-## Project Structure
+**Frontend:**
+- React.js
+- Axios
 
-```
-peterson1solution
-│
-├── frontend
-│   ├── public
-│   ├── src
-│   ├── package.json
-│   └── ...
-│
-├── backend
-│   ├── controllers
-│   ├── routes
-│   ├── utils
-│   ├── server.js
-│   ├── package.json
-│   └── ...
-│
-└── README.md
-```
-
-## Installation
-
-### Clone Repository
-
-```bash
-git clone https://github.com/yourusername/Peterson-Solution1.git
-```
-
-### Backend
-
-```bash
-cd backend
-npm install
-npm start
-```
-
-Backend runs on:
-
-```
-http://localhost:5000
-```
-
-### Frontend
-
-```bash
-cd frontend
-npm install
-npm start
-```
-
-Frontend runs on:
-
-```
-http://localhost:3000
-```
-
-## API Endpoint
-
-### POST
-
-```
-/api/peterson
-```
-
-### Request
-
-```json
-{
-  "process": 0
-}
-```
-
-or
-
-```json
-{
-  "process": 1
-}
-```
-
-### Response
-
-```json
-{
-  "success": true,
-  "data": {
-    "flag0": true,
-    "flag1": false,
-    "turn": 1,
-    "message": "Process 0 is executing"
-  }
-}
-```
-
-## Deployment
-
-### Frontend
-
-- Netlify
-
-### Backend
-
-- Vercel
-
-## Author
-
-Ahtisham Daud Satti
-
-## License
-
-This project is created for educational purposes.
+## 📂 Project Structure
